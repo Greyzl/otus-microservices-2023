@@ -33,7 +33,7 @@ allprojects {
 
     val testcontainersBom: String by project
     val protobufBom: String by project
-
+    val springBoot: String by project
     val guava: String by project;
 
 
@@ -45,6 +45,8 @@ allprojects {
                 mavenBom("org.testcontainers:testcontainers-bom:$testcontainersBom")
                 mavenBom("com.google.protobuf:protobuf-bom:$protobufBom")
             }
+            dependency("org.springframework.boot:spring-boot-starter:$springBoot")
+            dependency("org.springframework.boot:spring-boot-starter-web:$springBoot")
             dependency("com.google.guava:guava:$guava")
         }
     }

@@ -1,4 +1,4 @@
-rootProject.name = "otus-java-2023"
+rootProject.name = "otus-microservices-2023"
 
 
 pluginManagement {
@@ -16,4 +16,4 @@ pluginManagement {
         id("com.google.cloud.tools.jib") version jib
     }
 }
-include("hw01-gradle")
+include("hw01-docker")
