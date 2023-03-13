@@ -9,7 +9,7 @@ import ru.otus.Entity.Status;
 @RestController
 public class StatusController {
 
-    @GetMapping("/health")
+    @GetMapping("/health/")
     public ResponseEntity<Status> health(){
         return ResponseEntity.ok(new Status("OK"));
     }

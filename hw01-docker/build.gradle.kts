@@ -15,7 +15,7 @@ dependencies {
 
 tasks {
     named<ShadowJar>("shadowJar") {
-        archiveBaseName.set("gradleHelloWorld")
+        archiveBaseName.set("dockerHelloWorld")
         archiveVersion.set("0.1")
         archiveClassifier.set("")
         manifest {
