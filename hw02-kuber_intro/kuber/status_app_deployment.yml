@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: status-app
-        image: sergeys96/otus-microservices-2023:kuber_intro_v3
+        image: sergeys96/otus-microservices-2023:status-app-v1
         ports:
           - name: web
             containerPort: 8000
