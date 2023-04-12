@@ -17,3 +17,4 @@ pluginManagement {
     }
 }
 include("hw01-docker")
+include("hw02-kuber_intro")

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: status-rs-service
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: status-service
+  template:
+    metadata:
+      labels:
+        app: status-service
+    spec:
+      containers:
+      - name: status-service
+        image: sergeys96/otus-microservices-2023:kuber_intro_v3
+        ports:
+        - containerPort: 8000:8000
