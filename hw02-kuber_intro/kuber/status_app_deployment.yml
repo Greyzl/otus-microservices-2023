@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: status-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: status-app
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: status-app
+    spec:
+      containers:
+      - name: status-app
+        image: sergeys96/otus-microservices-2023:status-app-v1
+        ports:
+          - name: web
+            containerPort: 8000
